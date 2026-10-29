@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 安装说明 / Installation guide
+    url: https://github.com/Borders-Q/MT7925-macOS26-package/blob/main/docs/INSTALL.zh-CN.md
+    about: 构建号、驱动加载顺序、蓝牙 NVRAM 和恢复环境联网步骤。
+  - name: 上游 Wi-Fi 核心 / Upstream Wi-Fi driver
+    url: https://github.com/watchthelight-labs/mt7925-hackintosh-wifi
+    about: 固件、DMA、扫描与关联实现的原项目；请先核对上游已知限制。

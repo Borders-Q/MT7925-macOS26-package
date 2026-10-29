@@ -1,0 +1,16 @@
+.cache/
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+Logs/
+*.pklg
+config.plist
+config-*.plist
+EFI/
+OriginalEFI/
+*.env
+.env
+*.pem
+*.key
+networks.plist

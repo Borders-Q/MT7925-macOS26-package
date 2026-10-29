@@ -1,0 +1,43 @@
+name: 测试报告 / Test report
+description: 报告 Wi-Fi、蓝牙、重启或配置问题，并注明硬件和完整系统构建号。
+title: '[Test] '
+body:
+  - type: markdown
+    attributes:
+      value: 请仅提供脱敏信息。不要上传完整 EFI、密码、PMK 或 GitHub 访问令牌。Please redact identifiers and credentials.
+  - type: input
+    id: version
+    attributes:
+      label: 整合包版本 / Package version
+      placeholder: v0.1.0-alpha.1
+    validations:
+      required: true
+  - type: textarea
+    id: system
+    attributes:
+      label: 系统与硬件 / macOS build and hardware
+      description: sw_vers 的版本与构建号、机器型号、Wi-Fi PCI ID、蓝牙 USB ID；不要填写机器序列号。
+    validations:
+      required: true
+  - type: dropdown
+    id: frontend
+    attributes:
+      label: Wi-Fi 前端 / Front end
+      options:
+        - Ethernet / 恢复环境连接工具
+        - Native / 系统 Wi-Fi 菜单
+        - 未确定 / Unknown
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: 结果与复现步骤 / Results and reproduction
+      description: 分别报告 Wi-Fi 关联、DHCP/实际网络、蓝牙识别、BLE/经典配对、音频、冷启动和暖重启。
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 脱敏日志 / Redacted logs
+      description: 仅提供有关的错误与状态，移除 SSID、MAC、IP、机器标识、个人路径及任何凭据。

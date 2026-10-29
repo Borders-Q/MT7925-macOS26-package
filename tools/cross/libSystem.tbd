@@ -1,0 +1,10 @@
+--- !tapi-tbd
+tbd-version: 4
+targets: [ x86_64-macos ]
+install-name: '/usr/lib/libSystem.B.dylib'
+current-version: 1.0.0
+compatibility-version: 1.0.0
+exports:
+  - targets: [ x86_64-macos ]
+    symbols: [ dyld_stub_binder, _printf, _fprintf, _fputs, _fwrite, _puts, _putchar, _strlen, _strcmp, _memcpy, _memmove, _memset, _memcmp, _exit, _atexit, _dlopen, _dlsym, _dlclose, _dlerror, _sleep, _geteuid, _readpassphrase, _mach_task_self_, ___stderrp ]
+...
