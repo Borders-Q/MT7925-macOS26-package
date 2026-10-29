@@ -39,7 +39,7 @@ python3 scripts/build_release.py
 python3 scripts/check_latest.py
 ```
 
-For cross-compilation: `python scripts/build_recovery.py --llvm-bin <LLVM-bin>`. Release assembly verifies pinned asset hashes, preserves upstream kernel binaries, includes corresponding source snapshots and writes a file hash manifest. CI has been prepared; no CI success is claimed before GitHub runs it.
+For cross-compilation: `python scripts/build_recovery.py --llvm-bin <LLVM-bin>`. Release assembly verifies pinned asset hashes, preserves upstream kernel binaries, includes corresponding source snapshots and writes a file hash manifest. [GitHub Actions passed](https://github.com/Borders-Q/MT7925-macOS26-package/actions/runs/40970842966): 9 Python tests, static checks, and an Intel macOS client rebuild, PMK self-test and strict codesign verification. These checks do not validate the laptop hardware; see [validation scope](docs/VALIDATION.md).
 
 ## Limits and changes
 

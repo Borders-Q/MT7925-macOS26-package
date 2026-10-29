@@ -63,7 +63,9 @@ python3 scripts/build_release.py                # 下载锁定资产、验哈希
 python3 scripts/check_latest.py                 # 仅检查新版本，不自动更改锁定版本
 ```
 
-仓库随附已交叉编译的 `tools/bin/mtkwifi-recovery`，Windows 上组装发布包可直接使用；其 macOS 实际运行仍待验证。交叉编译可运行 `python scripts/build_recovery.py --llvm-bin <LLVM-bin>`。这只编译用户态工具，内核驱动使用上游发布二进制。
+仓库随附已交叉编译的 `tools/bin/mtkwifi-recovery`，Windows 上组装发布包可直接使用；该随附二进制在目标机器上的实际运行仍待验证。交叉编译可运行 `python scripts/build_recovery.py --llvm-bin <LLVM-bin>`。这只编译用户态工具，内核驱动使用上游发布二进制。
+
+[GitHub 自动验证已通过](https://github.com/Borders-Q/MT7925-macOS26-package/actions/runs/40970842966)：9 项 Python 测试、静态检查，以及 Intel macOS 上重新编译客户端、PMK 自测和严格签名校验。检查范围见 [VALIDATION.md](docs/VALIDATION.md)；这些结果不代表目标笔记本的 Wi-Fi 或蓝牙已通过实测。
 
 ## 已知边界
 

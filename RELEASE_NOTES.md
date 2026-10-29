@@ -10,6 +10,8 @@
 
 已做资产哈希、ZIP 完整性、硬件 ID 匹配、9 项自动测试、三种方案的 OpenCore 1.0.9 配置校验及用户态客户端静态检查。Alienware AC16251 上的新版本联网、蓝牙配对与音频尚未完成实测；上游仍有 AirPods 断连、睡眠唤醒等限制。CI 和离线检查不代表硬件验证。
 
+[GitHub Actions 首次验证通过](https://github.com/Borders-Q/MT7925-macOS26-package/actions/runs/40970842966)，包括 Intel macOS 上重新编译客户端、WPA2 PMK 自测和严格签名校验。CI 未执行目标网卡的连接或蓝牙测试。
+
 下载 `mt7925-macos26-0.1.0-alpha.1.zip`，对照旁边的 `.sha256` 文件校验，并阅读 README 与安装说明。源码 ZIP 是仓库归档，驱动包是独立的 Release 附件。
 
 - [安装说明](https://github.com/Borders-Q/MT7925-macOS26-package/blob/main/docs/INSTALL.zh-CN.md)
